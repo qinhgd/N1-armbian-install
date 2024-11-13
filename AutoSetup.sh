@@ -9,9 +9,9 @@ apt update
 apt install wget git unzip pip -y
 echo "克隆库……"
 git clone https://github.com/allanchen2019/mosdns-debian-install.git /opt/mosdns
-chmod 777 -R /opt/mosdns
+chmod 777 -R /etc/mosdns
 echo "执行安装……"
-bash /opt/mosdns/install-mosdns.sh
+bash /etc/mosdns/install-mosdns.sh
 
 if systemctl status mosdns.service |grep -q "running"; then
         echo "~~~~~~~~~~~~~~~~~~~~~~"
