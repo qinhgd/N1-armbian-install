@@ -2,7 +2,7 @@
 
 architecture=$(dpkg --print-architecture)
 
-cd /opt/mosdns || exit
+cd /etc/mosdns || exit
 mkdir bin
 cd bin || exit
 echo "下载mosdns和域名表……"
@@ -20,7 +20,7 @@ systemctl disable systemd-resolved.service
 systemctl daemon-reload
 echo "启动mosdns……"
 unzip -o mosdns.zip
-./mosdns service install -c /opt/mosdns/config-v5.yaml
+./mosdns service install -c /etc/mosdns/config-v5.yaml
 ./mosdns service start
 systemctl enable mosdns.service
 
