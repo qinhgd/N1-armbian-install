@@ -11,11 +11,6 @@ apt install wget git unzip -y
 
 target_dir="/etc/mosdns"
 
-# 判断目标目录是否存在，如果存在则不做任何处理
-if [! -d "$target_dir" ]; then
-    mkdir -p "$target_dir"
-fi
-
 echo "克隆库……"
 git clone https://github.com/qinhgd/mosdns-debian-install.git "$target_dir"
 chmod 777 -R "$target_dir"
