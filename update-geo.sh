@@ -4,7 +4,7 @@ set -euo pipefail
 echo "~~~~~~~~~~~~~~"
 echo "更新资源文件………"
 echo "~~~~~~~~~~~~~~"
-cd /opt/mosdns/bin || exit
+cd /etc/mosdns/bin || exit
 
 wget --show-progress -t 5 -T 10 -cqO accelerated-domains.china.conf https://raw.githubusercontent.com/felixonmars/dnsmasq-china-list/master/accelerated-domains.china.conf
 wget --show-progress -t 5 -T 10 -cqO apple.china.conf https://github.com/felixonmars/dnsmasq-china-list/raw/master/apple.china.conf
@@ -20,6 +20,6 @@ if systemctl status mosdns.service |grep -q "running"; then
         echo "~~~~~~~~~~~~~~~~"
     else
         echo "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
-        echo "Emm………好像哪里不太对，mosdns挂了………"
+        echo "Emm………好像哪里不太对，mosdns 挂了………"
         echo "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
 fi
