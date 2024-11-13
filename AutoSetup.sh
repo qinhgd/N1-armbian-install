@@ -7,11 +7,19 @@ echo "~~~~~~~~~~"
 echo "下载依赖……"
 apt update
 apt install wget git unzip pip -y
+
+target_dir="/etc/mosdns"
+
+# 判断目标目录是否存在，如果存在则删除
+if [ -d "$target_dir" ]; then
+    rm -rf "$target_dir"
+fi
+
 echo "克隆库……"
-git clone https://github.com/allanchen2019/mosdns-debian-install.git /etc/mosdns
-chmod 777 -R /etc/mosdns
+git clone https://github.com/allanchen2019/mosdns-debian-install.git "$target_dir"
+chmod 777 -R "$target_dir"
 echo "执行安装……"
-bash /etc/mosdns/install-mosdns.sh
+bash "$target_dir/install-mosdns.sh"
 
 if systemctl status mosdns.service | grep -q "running"; then
     echo "~~~~~~~~~~~~~~~~~~~~~~"
