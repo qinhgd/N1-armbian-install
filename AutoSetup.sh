@@ -6,13 +6,13 @@ echo "安装 mosdns"
 echo "~~~~~~~~~~"
 echo "下载依赖……"
 apt update
-apt install wget git unzip pip -y
+apt install wget git unzip -y
 
 target_dir="/etc/mosdns"
 
-# 判断目标目录是否存在，如果存在则删除
-if [ -d "$target_dir" ]; then
-    rm -rf "$target_dir"
+# 判断目标目录是否存在，如果存在则不做任何处理
+if [! -d "$target_dir" ]; then
+    mkdir -p "$target_dir"
 fi
 
 echo "克隆库……"
@@ -21,7 +21,8 @@ chmod 777 -R "$target_dir"
 echo "执行安装……"
 bash "$target_dir/install-mosdns.sh"
 
-if systemctl status mosdns.service | grep -q "running"; then
+# 修改路径检查部分，确保与目标安装目录一致
+if systemctl status mosdns.service | grep -q "running" && grep -q "/etc/mosdns" <(systemctl status mosdns.service); then
     echo "~~~~~~~~~~~~~~~~~~~~~~"
     echo "安装完成，mosdns 已运行！"
     echo "~~~~~~~~~~~~~~~~~~~~~~"
