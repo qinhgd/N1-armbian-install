@@ -16,7 +16,7 @@ if [! -d "$target_dir" ]; then
 fi
 
 echo "克隆库……"
-git clone  https://github.com/qinhgd/mosdns-debian-install.git "$target_dir"
+git clone https://github.com/qinhgd/mosdns-debian-install.git "$target_dir"
 chmod 777 -R "$target_dir"
 echo "执行安装……"
 bash "$target_dir/install-mosdns.sh"
@@ -31,4 +31,4 @@ else
     echo "Emm………好像哪里不太对，mosdns 没运行………"
     echo "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
 fi
-rm -rf./AutoSetup.sh
+rm -rf AutoSetup.sh
