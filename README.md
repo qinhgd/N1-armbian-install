@@ -3,9 +3,9 @@
 一个在Debian（或衍生版）上安装[mosdns](https://github.com/IrineSistiana/mosdns)或者singbox的shell脚本。
 
 # singbox安装脚本：
-
+```
 bash -c "$(curl -kfsSl https://raw.githubusercontent.com/qinhgd/mosdns-debian-install/refs/heads/v5/singbox_install.sh)"
-
+```
 #查看状态
 systemctl status singbox
 #启动
