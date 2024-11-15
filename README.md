@@ -118,11 +118,6 @@ sudo apt update
 sudo apt install nftables
 安装shellcrash
 export url='https://fastly.jsdelivr.net/gh/juewuy/ShellCrash@master' && wget -q --no-check-certificate -O /tmp/install.sh $url/install.sh  && bash /tmp/install.sh && source /etc/profile &> /dev/null
-https://sub.vip.sd/JPa6vvFgygVtNP2sGJ2r/download/NL?target=V2Ray
-https://ss.cft.my/api/v1/client/subscribe?token=0fc3bf2d9f05074b1e5bd5ace8af359e
-https://nachoneko.cn/api/v1/client/subscribe?token=7678c2fc5d5860bdb8d621a9a0801295
-https://sub.vip.sd/JPa6vvFgygVtNP2sGJ2r/download/NL?target=Clash
-
 安装1panel
 curl -sSL https://resource.fit2cloud.com/1panel/package/quick_start.sh -o quick_start.sh && bash quick_start.sh
 卸载
