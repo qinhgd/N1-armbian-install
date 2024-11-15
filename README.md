@@ -172,3 +172,35 @@ docker exec openwrt sed -e 's/192.168.1.1/192.168.31.2/' -i /etc/config/network
 docker restart openwrt
 
 vi /etc/config/network
+
+以下是在 Armbian 中将这段代码设置为开机自启的方法：
+创建一个脚本文件，例如 /etc/init.d/redirect_dns.sh：
+bash
+Copy
+sudo nano /etc/init.d/redirect_dns.sh
+在文件中添加以下内容：
+bash
+Copy
+#!/bin/sh
+### BEGIN INIT INFO
+# Provides:          redirect_dns
+# Required-Start:    $local_fs $network
+# Required-Stop:     $local_fs
+# Default-Start:     2 3 4 5
+# Default-Stop:      0 1 6
+# Short-Description: Redirect DNS traffic on ports 53.
+### END INIT INFO
+
+iptables -t nat -A PREROUTING -p tcp --dport 53 -j REDIRECT --to-ports 53
+iptables -t nat -A PREROUTING -p udp --dport 53 -j REDIRECT --to-ports 53
+ip6tables -t nat -A PREROUTING -p tcp --dport 53 -j REDIRECT --to-ports 53
+ip6tables -t nat -A PREROUTING -p udp --dport 53 -j REDIRECT --to-ports 53
+给脚本添加可执行权限：
+bash
+Copy
+sudo chmod +x /etc/init.d/redirect_dns.sh
+更新系统启动项：
+bash
+Copy
+sudo update-rc.d redirect_dns.sh defaults
+这样，在系统启动时就会自动执行这些 iptables 规则来重定向端口 53 的流
