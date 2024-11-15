@@ -3,6 +3,7 @@
 一个在Debian（或衍生版）上安装[mosdns](https://github.com/IrineSistiana/mosdns)或者singbox的shell脚本。
 
 # singbox安装脚本：
+## N1安装singbox
 ```
 bash -c "$(curl -kfsSl https://raw.githubusercontent.com/qinhgd/mosdns-debian-install/refs/heads/v5/singbox_install.sh)"
 ```
