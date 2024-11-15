@@ -94,7 +94,7 @@ sudo tailscale up --advertise-routes=192.168.31.0/24,192.168.1.0/24
 sudo tailscale up --advertise-exit-node
 
 tailscale up --advertise-exit-node --advertise-routes=192.168.1.0/24,192.168.31.0/24
-
+```
 
 安装AdGuardHome
 ```
@@ -108,10 +108,10 @@ ip6tables -t nat -A PREROUTING -p tcp --dport 53 -j REDIRECT --to-ports 5353
 ip6tables -t nat -A PREROUTING -p udp --dport 53 -j REDIRECT --to-ports 5353
 ```
 安装nftables
-
+```
 sudo apt update
 sudo apt install nftables
-
+```
 
 停用systemd-resolved……"
 
@@ -122,9 +122,9 @@ systemctl stop systemd-resolved.service
 systemctl start systemd-resolved.service
 
 安装shellcrash
-
+```
 export url='https://fastly.jsdelivr.net/gh/juewuy/ShellCrash@master' && wget -q --no-check-certificate -O /tmp/install.sh $url/install.sh  && bash /tmp/install.sh && source /etc/profile &> /dev/null
-
+```
 安装1panel
 ```
 curl -sSL https://resource.fit2cloud.com/1panel/package/quick_start.sh -o quick_start.sh && bash quick_start.sh
