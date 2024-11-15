@@ -4,6 +4,15 @@
 
 2023-3-19更新：兼容V5，要安装之前的就砍掉重练吧。
 
+singbox安装脚本：
+
+bash -c "$(curl -kfsSl https://raw.githubusercontent.com/qinhgd/mosdns-debian-install/refs/heads/v5/singbox_install.sh)"
+#查看状态
+systemctl status singbox
+#启动
+systemctl start singbox
+#重启
+systemctl restart singbox
 
 # 重要！先决条件：需要事先为DNS服务器做好IP分流。
 
