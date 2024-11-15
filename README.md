@@ -8,6 +8,7 @@
 bash -c "$(curl -kfsSl https://raw.githubusercontent.com/qinhgd/mosdns-debian-install/refs/heads/v5/singbox_install.sh)"
 ```
 ###常用命令：
+
 #查看状态
 ```
 systemctl status singbox
