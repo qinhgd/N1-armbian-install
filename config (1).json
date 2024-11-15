@@ -46,17 +46,14 @@
       },
       {
         "rule_set": [
-          "geosite-netflix",
           "geosite-youtube",
           "geosite-telegram",
-          "geosite-category-media",
           "geosite-openai",
           "geosite-speedtest",
           "geosite-github",
-          "geosite-jetbrains",
-          "geosite-spotify",
           "geosite-cloudflare",
-          "geosite-google"
+          "geosite-google",
+          "geosite-microsoft"
         ],
         "rewrite_ttl": 1,
         "server": "fakeip-dns"
@@ -91,7 +88,7 @@
         "server": "fakeip-dns"
       }
     ],
-    "strategy": "prefer_ipv4",
+    "strategy": "ipv4_only",
     "fakeip": {
       "enabled": true,
       "inet4_range": "198.18.0.0/15"
@@ -147,27 +144,22 @@
         "🇯🇵 订阅1 日本",
         "🇰🇷 订阅1 韩国",
         "🇸🇬 订阅1 新加坡",
+        "🇭🇰 订阅4 香港",
+        "🇺🇸 订阅4 美国",
+        "🇯🇵 订阅4 日本",
+        "🇰🇷 订阅4 韩国",
+        "🇭🇰 订阅5 香港",
+        "🇺🇸 订阅5 美国",
+        "🇯🇵 订阅5 日本",
+        "🇸🇬 订阅5 新加坡",
         "☁️ 订阅1",
+        "☁️ 订阅4",
+        "☁️ 订阅5",
         "➜ Direct"
       ],
       "interrupt_exist_connections": true,
       "type": "selector",
       "default": "🇭🇰 订阅1 香港"
-    },
-    {
-      "tag": "Netflix",
-      "outbounds": [
-        "Proxy",
-        "🇭🇰 订阅1 香港",
-        "🇺🇸 订阅1 美国",
-        "🇯🇵 订阅1 日本",
-        "🇰🇷 订阅1 韩国",
-        "🇸🇬 订阅1 新加坡",
-        "☁️ 订阅1",
-        "➜ Direct"
-      ],
-      "interrupt_exist_connections": true,
-      "type": "selector"
     },
     {
       "tag": "Youtube",
@@ -178,7 +170,17 @@
         "🇯🇵 订阅1 日本",
         "🇰🇷 订阅1 韩国",
         "🇸🇬 订阅1 新加坡",
+        "🇭🇰 订阅4 香港",
+        "🇺🇸 订阅4 美国",
+        "🇯🇵 订阅4 日本",
+        "🇰🇷 订阅4 韩国",
+        "🇭🇰 订阅5 香港",
+        "🇺🇸 订阅5 美国",
+        "🇯🇵 订阅5 日本",
+        "🇸🇬 订阅5 新加坡",
         "☁️ 订阅1",
+        "☁️ 订阅4",
+        "☁️ 订阅5",
         "➜ Direct"
       ],
       "interrupt_exist_connections": true,
@@ -193,22 +195,17 @@
         "🇯🇵 订阅1 日本",
         "🇰🇷 订阅1 韩国",
         "🇸🇬 订阅1 新加坡",
+        "🇭🇰 订阅4 香港",
+        "🇺🇸 订阅4 美国",
+        "🇯🇵 订阅4 日本",
+        "🇰🇷 订阅4 韩国",
+        "🇭🇰 订阅5 香港",
+        "🇺🇸 订阅5 美国",
+        "🇯🇵 订阅5 日本",
+        "🇸🇬 订阅5 新加坡",
         "☁️ 订阅1",
-        "➜ Direct"
-      ],
-      "interrupt_exist_connections": true,
-      "type": "selector"
-    },
-    {
-      "tag": "Category-media",
-      "outbounds": [
-        "Proxy",
-        "🇭🇰 订阅1 香港",
-        "🇺🇸 订阅1 美国",
-        "🇯🇵 订阅1 日本",
-        "🇰🇷 订阅1 韩国",
-        "🇸🇬 订阅1 新加坡",
-        "☁️ 订阅1",
+        "☁️ 订阅4",
+        "☁️ 订阅5",
         "➜ Direct"
       ],
       "interrupt_exist_connections": true,
@@ -223,7 +220,17 @@
         "🇯🇵 订阅1 日本",
         "🇰🇷 订阅1 韩国",
         "🇸🇬 订阅1 新加坡",
+        "🇭🇰 订阅4 香港",
+        "🇺🇸 订阅4 美国",
+        "🇯🇵 订阅4 日本",
+        "🇰🇷 订阅4 韩国",
+        "🇭🇰 订阅5 香港",
+        "🇺🇸 订阅5 美国",
+        "🇯🇵 订阅5 日本",
+        "🇸🇬 订阅5 新加坡",
         "☁️ 订阅1",
+        "☁️ 订阅4",
+        "☁️ 订阅5",
         "➜ Direct"
       ],
       "interrupt_exist_connections": true,
@@ -238,7 +245,17 @@
         "🇯🇵 订阅1 日本",
         "🇰🇷 订阅1 韩国",
         "🇸🇬 订阅1 新加坡",
+        "🇭🇰 订阅4 香港",
+        "🇺🇸 订阅4 美国",
+        "🇯🇵 订阅4 日本",
+        "🇰🇷 订阅4 韩国",
+        "🇭🇰 订阅5 香港",
+        "🇺🇸 订阅5 美国",
+        "🇯🇵 订阅5 日本",
+        "🇸🇬 订阅5 新加坡",
         "☁️ 订阅1",
+        "☁️ 订阅4",
+        "☁️ 订阅5",
         "➜ Direct"
       ],
       "interrupt_exist_connections": true,
@@ -253,37 +270,17 @@
         "🇯🇵 订阅1 日本",
         "🇰🇷 订阅1 韩国",
         "🇸🇬 订阅1 新加坡",
+        "🇭🇰 订阅4 香港",
+        "🇺🇸 订阅4 美国",
+        "🇯🇵 订阅4 日本",
+        "🇰🇷 订阅4 韩国",
+        "🇭🇰 订阅5 香港",
+        "🇺🇸 订阅5 美国",
+        "🇯🇵 订阅5 日本",
+        "🇸🇬 订阅5 新加坡",
         "☁️ 订阅1",
-        "➜ Direct"
-      ],
-      "interrupt_exist_connections": true,
-      "type": "selector"
-    },
-    {
-      "tag": "Jetbrains",
-      "outbounds": [
-        "Proxy",
-        "🇭🇰 订阅1 香港",
-        "🇺🇸 订阅1 美国",
-        "🇯🇵 订阅1 日本",
-        "🇰🇷 订阅1 韩国",
-        "🇸🇬 订阅1 新加坡",
-        "☁️ 订阅1",
-        "➜ Direct"
-      ],
-      "interrupt_exist_connections": true,
-      "type": "selector"
-    },
-    {
-      "tag": "Spotify",
-      "outbounds": [
-        "Proxy",
-        "🇭🇰 订阅1 香港",
-        "🇺🇸 订阅1 美国",
-        "🇯🇵 订阅1 日本",
-        "🇰🇷 订阅1 韩国",
-        "🇸🇬 订阅1 新加坡",
-        "☁️ 订阅1",
+        "☁️ 订阅4",
+        "☁️ 订阅5",
         "➜ Direct"
       ],
       "interrupt_exist_connections": true,
@@ -298,7 +295,17 @@
         "🇯🇵 订阅1 日本",
         "🇰🇷 订阅1 韩国",
         "🇸🇬 订阅1 新加坡",
+        "🇭🇰 订阅4 香港",
+        "🇺🇸 订阅4 美国",
+        "🇯🇵 订阅4 日本",
+        "🇰🇷 订阅4 韩国",
+        "🇭🇰 订阅5 香港",
+        "🇺🇸 订阅5 美国",
+        "🇯🇵 订阅5 日本",
+        "🇸🇬 订阅5 新加坡",
         "☁️ 订阅1",
+        "☁️ 订阅4",
+        "☁️ 订阅5",
         "➜ Direct"
       ],
       "interrupt_exist_connections": true,
@@ -313,7 +320,42 @@
         "🇯🇵 订阅1 日本",
         "🇰🇷 订阅1 韩国",
         "🇸🇬 订阅1 新加坡",
+        "🇭🇰 订阅4 香港",
+        "🇺🇸 订阅4 美国",
+        "🇯🇵 订阅4 日本",
+        "🇰🇷 订阅4 韩国",
+        "🇭🇰 订阅5 香港",
+        "🇺🇸 订阅5 美国",
+        "🇯🇵 订阅5 日本",
+        "🇸🇬 订阅5 新加坡",
         "☁️ 订阅1",
+        "☁️ 订阅4",
+        "☁️ 订阅5",
+        "➜ Direct"
+      ],
+      "interrupt_exist_connections": true,
+      "type": "selector"
+    },
+    {
+      "tag": "Microsoft",
+      "outbounds": [
+        "Proxy",
+        "🇭🇰 订阅1 香港",
+        "🇺🇸 订阅1 美国",
+        "🇯🇵 订阅1 日本",
+        "🇰🇷 订阅1 韩国",
+        "🇸🇬 订阅1 新加坡",
+        "🇭🇰 订阅4 香港",
+        "🇺🇸 订阅4 美国",
+        "🇯🇵 订阅4 日本",
+        "🇰🇷 订阅4 韩国",
+        "🇭🇰 订阅5 香港",
+        "🇺🇸 订阅5 美国",
+        "🇯🇵 订阅5 日本",
+        "🇸🇬 订阅5 新加坡",
+        "☁️ 订阅1",
+        "☁️ 订阅4",
+        "☁️ 订阅5",
         "➜ Direct"
       ],
       "interrupt_exist_connections": true,
@@ -387,6 +429,169 @@
       "interrupt_exist_connections": false
     },
     {
+      "tag": "🇭🇰 订阅4 香港",
+      "outbounds": [
+        "HK-T",
+        "HK-T 2",
+        "HK-T 3",
+        "HK-T 4",
+        "HK-T 5",
+        "HK-T 6",
+        "HK-T 7",
+        "HK-T 8",
+        "HK-T 9",
+        "HK 香港"
+      ],
+      "type": "urltest",
+      "url": "https://www.gstatic.com/generate_204",
+      "tolerance": 50,
+      "interrupt_exist_connections": false
+    },
+    {
+      "tag": "🇺🇸 订阅4 美国",
+      "outbounds": [
+        "美国圣何塞",
+        "US 美国",
+        "US 美国 2",
+        "US 美国 3",
+        "US 美国 4",
+        "US 美国 5",
+        "US 美国 6",
+        "US 美国 7",
+        "US 美国 8"
+      ],
+      "type": "urltest",
+      "url": "https://www.gstatic.com/generate_204",
+      "tolerance": 50,
+      "interrupt_exist_connections": false
+    },
+    {
+      "tag": "🇯🇵 订阅4 日本",
+      "outbounds": [
+        "JP 日本",
+        "JP 日本 2"
+      ],
+      "type": "urltest",
+      "url": "https://www.gstatic.com/generate_204",
+      "tolerance": 50,
+      "interrupt_exist_connections": false
+    },
+    {
+      "tag": "🇰🇷 订阅4 韩国",
+      "outbounds": [
+        "韩国首尔",
+        "KR 韩国",
+        "KR 韩国 2",
+        "KR 韩国 3",
+        "KR 韩国 4",
+        "KR 韩国 5",
+        "KR 韩国 6",
+        "KR 韩国 7",
+        "KR 韩国 8",
+        "KR 韩国 9",
+        "KR 韩国 10",
+        "KR 韩国 11",
+        "KR 韩国 12",
+        "KR 韩国 13",
+        "KR 韩国 14",
+        "KR 韩国 15",
+        "KR 韩国 16",
+        "KR 韩国 17",
+        "KR 韩国 18",
+        "KR 韩国 19",
+        "KR 韩国 20",
+        "KR 韩国 21",
+        "KR 韩国 22",
+        "KR 韩国 23",
+        "KR 韩国 24",
+        "KR 韩国 25",
+        "KR 韩国 26",
+        "KR 韩国 27",
+        "KR 韩国 28",
+        "KR 韩国 29",
+        "KR 韩国 30",
+        "KR 韩国 31",
+        "KR 韩国 32",
+        "KR 韩国 33",
+        "KR 韩国 34",
+        "KR 韩国 35",
+        "KR 韩国 36",
+        "KR 韩国 37",
+        "KR 韩国 38",
+        "KR 韩国 39",
+        "KR 韩国 40",
+        "KR 韩国 41",
+        "KR 韩国 42",
+        "KR 韩国 43",
+        "KR 韩国 44",
+        "KR 韩国 45",
+        "KR 韩国 46",
+        "KR 韩国 47",
+        "KR 韩国 48",
+        "KR 韩国 49",
+        "KR 韩国 50",
+        "KR 韩国 51",
+        "KR 韩国 52",
+        "KR 韩国 53",
+        "KR 韩国 54",
+        "KR 韩国 55",
+        "KR 韩国 56",
+        "KR 韩国 57",
+        "KR 韩国 58",
+        "KR 韩国 59",
+        "KR 韩国 60",
+        "KR 韩国 61"
+      ],
+      "type": "urltest",
+      "url": "https://www.gstatic.com/generate_204",
+      "tolerance": 50,
+      "interrupt_exist_connections": false
+    },
+    {
+      "tag": "🇭🇰 订阅5 香港",
+      "outbounds": [
+        "[vless]HK1-Vless",
+        "[vless]HK2-Vless"
+      ],
+      "type": "urltest",
+      "url": "https://www.gstatic.com/generate_204",
+      "tolerance": 50,
+      "interrupt_exist_connections": false
+    },
+    {
+      "tag": "🇺🇸 订阅5 美国",
+      "outbounds": [
+        "[vless]美国双ISP-Vless",
+        "[vless]US6-Vless",
+        "[vless]US7-Vless"
+      ],
+      "type": "urltest",
+      "url": "https://www.gstatic.com/generate_204",
+      "tolerance": 50,
+      "interrupt_exist_connections": false
+    },
+    {
+      "tag": "🇯🇵 订阅5 日本",
+      "outbounds": [
+        "[vless]JP3-Vless"
+      ],
+      "type": "urltest",
+      "url": "https://www.gstatic.com/generate_204",
+      "tolerance": 50,
+      "interrupt_exist_connections": false
+    },
+    {
+      "tag": "🇸🇬 订阅5 新加坡",
+      "outbounds": [
+        "[vless]SGP3-Vless",
+        "[vless]SGP4-Vless"
+      ],
+      "type": "urltest",
+      "url": "https://www.gstatic.com/generate_204",
+      "tolerance": 50,
+      "interrupt_exist_connections": false
+    },
+    {
       "tag": "☁️ 订阅1",
       "outbounds": [
         "最新官网: we7.moe",
@@ -446,6 +651,140 @@
         "伊拉克 01 | ws",
         "阿根廷 01 | ws",
         "阿根廷 02 | ws"
+      ],
+      "interrupt_exist_connections": true,
+      "type": "selector"
+    },
+    {
+      "tag": "☁️ 订阅4",
+      "outbounds": [
+        "CF",
+        "CF-Byoip",
+        "CF 2",
+        "CF 3",
+        "韩国首尔",
+        "台湾",
+        "台湾 2",
+        "HK-T",
+        "HK-T 2",
+        "HK-T 3",
+        "HK-T 4",
+        "HK-T 5",
+        "HK-T 6",
+        "HK-T 7",
+        "HK-T 8",
+        "HK-T 9",
+        "台北",
+        "CN-Tencent",
+        "CN-Tencent 2",
+        "CN-Tencent 3",
+        "CN-Tencent 4",
+        "CN-Tencent 5",
+        "法国巴黎",
+        "美国圣何塞",
+        "TR 土耳其",
+        "GE 格鲁吉亚",
+        "BG 保加利亚",
+        "NO 挪威",
+        "CL 智利",
+        "AT 奥地利",
+        "HU 匈牙利",
+        "LT 立陶宛",
+        "JP 日本",
+        "KR 韩国",
+        "US 美国",
+        "US 美国 2",
+        "KR 韩国 2",
+        "KR 韩国 3",
+        "KR 韩国 4",
+        "KR 韩国 5",
+        "KR 韩国 6",
+        "KR 韩国 7",
+        "KR 韩国 8",
+        "KR 韩国 9",
+        "KR 韩国 10",
+        "KR 韩国 11",
+        "KR 韩国 12",
+        "KR 韩国 13",
+        "KR 韩国 14",
+        "KR 韩国 15",
+        "KR 韩国 16",
+        "KR 韩国 17",
+        "KR 韩国 18",
+        "KR 韩国 19",
+        "KR 韩国 20",
+        "KR 韩国 21",
+        "KR 韩国 22",
+        "KR 韩国 23",
+        "KR 韩国 24",
+        "KR 韩国 25",
+        "KR 韩国 26",
+        "KR 韩国 27",
+        "KR 韩国 28",
+        "KR 韩国 29",
+        "KR 韩国 30",
+        "KR 韩国 31",
+        "KR 韩国 32",
+        "KR 韩国 33",
+        "KR 韩国 34",
+        "KR 韩国 35",
+        "KR 韩国 36",
+        "KR 韩国 37",
+        "KR 韩国 38",
+        "KR 韩国 39",
+        "KR 韩国 40",
+        "KR 韩国 41",
+        "KR 韩国 42",
+        "KR 韩国 43",
+        "KR 韩国 44",
+        "KR 韩国 45",
+        "KR 韩国 46",
+        "KR 韩国 47",
+        "KR 韩国 48",
+        "KR 韩国 49",
+        "KR 韩国 50",
+        "KR 韩国 51",
+        "KR 韩国 52",
+        "KR 韩国 53",
+        "KR 韩国 54",
+        "KR 韩国 55",
+        "KR 韩国 56",
+        "KR 韩国 57",
+        "KR 韩国 58",
+        "KR 韩国 59",
+        "KR 韩国 60",
+        "KR 韩国 61",
+        "US 美国 3",
+        "US 美国 4",
+        "US 美国 5",
+        "FRA",
+        "JP 日本 2",
+        "US 美国 6",
+        "HK 香港",
+        "EWR",
+        "US 美国 7",
+        "US 美国 8"
+      ],
+      "interrupt_exist_connections": true,
+      "type": "selector"
+    },
+    {
+      "tag": "☁️ 订阅5",
+      "outbounds": [
+        "[vless]剩余流量：1022.8+GB",
+        "[vless]距离下次重置剩余：15+天",
+        "[vless]套餐到期：2025-11-09",
+        "[vless]过滤掉11条线路",
+        "[vless]美国双ISP-Vless",
+        "[vless]JP3-Vless",
+        "[vless]SGP3-Vless",
+        "[vless]SGP4-Vless",
+        "[vless]US6-Vless",
+        "[vless]US7-Vless",
+        "[vless]HK1-Vless",
+        "[vless]HK2-Vless",
+        "[vless]首尔ISP-Vless",
+        "[vless]大田ISP-Vless"
       ],
       "interrupt_exist_connections": true,
       "type": "selector"
@@ -1273,24 +1612,2618 @@
           "host": "tms.dingtalk.com"
         }
       }
+    },
+    {
+      "tag": "CF",
+      "server": "visa.cn",
+      "server_port": 2087,
+      "type": "vless",
+      "uuid": "e8899a8e-729a-43bc-aebf-95e12c6c6db6",
+      "tls": {
+        "enabled": true,
+        "server_name": "vless.ccdd.site",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/?ed=2560",
+        "headers": {
+          "host": "vless.ccdd.site"
+        }
+      }
+    },
+    {
+      "tag": "CF-Byoip",
+      "server": "api.console.anthropic.com",
+      "server_port": 443,
+      "type": "vless",
+      "uuid": "e8899a8e-729a-43bc-aebf-95e12c6c6db6",
+      "tls": {
+        "enabled": true,
+        "server_name": "vless.ccdd.site",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/?ed=2560",
+        "headers": {
+          "host": "vless.ccdd.site"
+        }
+      }
+    },
+    {
+      "tag": "CF 2",
+      "server": "cf-cname.xingpingcn.top",
+      "server_port": 2096,
+      "type": "vless",
+      "uuid": "e8899a8e-729a-43bc-aebf-95e12c6c6db6",
+      "tls": {
+        "enabled": true,
+        "server_name": "vless.ccdd.site",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/?ed=2560",
+        "headers": {
+          "host": "vless.ccdd.site"
+        }
+      }
+    },
+    {
+      "tag": "CF 3",
+      "server": "cf.chinam.eu.org",
+      "server_port": 2096,
+      "type": "vless",
+      "uuid": "e8899a8e-729a-43bc-aebf-95e12c6c6db6",
+      "tls": {
+        "enabled": true,
+        "server_name": "vless.ccdd.site",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/?ed=2560",
+        "headers": {
+          "host": "vless.ccdd.site"
+        }
+      }
+    },
+    {
+      "tag": "韩国首尔",
+      "server": "132.226.22.106",
+      "server_port": 34237,
+      "type": "vless",
+      "uuid": "e8899a8e-729a-43bc-aebf-95e12c6c6db6",
+      "tls": {
+        "enabled": true,
+        "server_name": "vless.ccdd.site",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/?ed=2560",
+        "headers": {
+          "host": "vless.ccdd.site"
+        }
+      }
+    },
+    {
+      "tag": "台湾",
+      "server": "210.61.97.241",
+      "server_port": 81,
+      "type": "vless",
+      "uuid": "e8899a8e-729a-43bc-aebf-95e12c6c6db6",
+      "tls": {
+        "enabled": true,
+        "server_name": "vless.ccdd.site",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/?ed=2560",
+        "headers": {
+          "host": "vless.ccdd.site"
+        }
+      }
+    },
+    {
+      "tag": "台湾 2",
+      "server": "118.163.37.32",
+      "server_port": 81,
+      "type": "vless",
+      "uuid": "e8899a8e-729a-43bc-aebf-95e12c6c6db6",
+      "tls": {
+        "enabled": true,
+        "server_name": "vless.ccdd.site",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/?ed=2560",
+        "headers": {
+          "host": "vless.ccdd.site"
+        }
+      }
+    },
+    {
+      "tag": "HK-T",
+      "server": "219.76.13.180",
+      "server_port": 443,
+      "type": "vless",
+      "uuid": "e8899a8e-729a-43bc-aebf-95e12c6c6db6",
+      "tls": {
+        "enabled": true,
+        "server_name": "vless.ccdd.site",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/?ed=2560",
+        "headers": {
+          "host": "vless.ccdd.site"
+        }
+      }
+    },
+    {
+      "tag": "HK-T 2",
+      "server": "219.76.13.177",
+      "server_port": 443,
+      "type": "vless",
+      "uuid": "e8899a8e-729a-43bc-aebf-95e12c6c6db6",
+      "tls": {
+        "enabled": true,
+        "server_name": "vless.ccdd.site",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/?ed=2560",
+        "headers": {
+          "host": "vless.ccdd.site"
+        }
+      }
+    },
+    {
+      "tag": "HK-T 3",
+      "server": "219.76.13.181",
+      "server_port": 443,
+      "type": "vless",
+      "uuid": "e8899a8e-729a-43bc-aebf-95e12c6c6db6",
+      "tls": {
+        "enabled": true,
+        "server_name": "vless.ccdd.site",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/?ed=2560",
+        "headers": {
+          "host": "vless.ccdd.site"
+        }
+      }
+    },
+    {
+      "tag": "HK-T 4",
+      "server": "219.76.13.186",
+      "server_port": 443,
+      "type": "vless",
+      "uuid": "e8899a8e-729a-43bc-aebf-95e12c6c6db6",
+      "tls": {
+        "enabled": true,
+        "server_name": "vless.ccdd.site",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/?ed=2560",
+        "headers": {
+          "host": "vless.ccdd.site"
+        }
+      }
+    },
+    {
+      "tag": "HK-T 5",
+      "server": "219.76.13.183",
+      "server_port": 443,
+      "type": "vless",
+      "uuid": "e8899a8e-729a-43bc-aebf-95e12c6c6db6",
+      "tls": {
+        "enabled": true,
+        "server_name": "vless.ccdd.site",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/?ed=2560",
+        "headers": {
+          "host": "vless.ccdd.site"
+        }
+      }
+    },
+    {
+      "tag": "HK-T 6",
+      "server": "219.76.13.166",
+      "server_port": 443,
+      "type": "vless",
+      "uuid": "e8899a8e-729a-43bc-aebf-95e12c6c6db6",
+      "tls": {
+        "enabled": true,
+        "server_name": "vless.ccdd.site",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/?ed=2560",
+        "headers": {
+          "host": "vless.ccdd.site"
+        }
+      }
+    },
+    {
+      "tag": "HK-T 7",
+      "server": "112.119.49.206",
+      "server_port": 23555,
+      "type": "vless",
+      "uuid": "e8899a8e-729a-43bc-aebf-95e12c6c6db6",
+      "tls": {
+        "enabled": true,
+        "server_name": "vless.ccdd.site",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/?ed=2560",
+        "headers": {
+          "host": "vless.ccdd.site"
+        }
+      }
+    },
+    {
+      "tag": "HK-T 8",
+      "server": "219.77.65.212",
+      "server_port": 23555,
+      "type": "vless",
+      "uuid": "e8899a8e-729a-43bc-aebf-95e12c6c6db6",
+      "tls": {
+        "enabled": true,
+        "server_name": "vless.ccdd.site",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/?ed=2560",
+        "headers": {
+          "host": "vless.ccdd.site"
+        }
+      }
+    },
+    {
+      "tag": "HK-T 9",
+      "server": "42.98.167.229",
+      "server_port": 12345,
+      "type": "vless",
+      "uuid": "e8899a8e-729a-43bc-aebf-95e12c6c6db6",
+      "tls": {
+        "enabled": true,
+        "server_name": "vless.ccdd.site",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/?ed=2560",
+        "headers": {
+          "host": "vless.ccdd.site"
+        }
+      }
+    },
+    {
+      "tag": "台北",
+      "server": "114.34.202.224",
+      "server_port": 10004,
+      "type": "vless",
+      "uuid": "e8899a8e-729a-43bc-aebf-95e12c6c6db6",
+      "tls": {
+        "enabled": true,
+        "server_name": "vless.ccdd.site",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/?ed=2560",
+        "headers": {
+          "host": "vless.ccdd.site"
+        }
+      }
+    },
+    {
+      "tag": "CN-Tencent",
+      "server": "101.42.10.90",
+      "server_port": 443,
+      "type": "vless",
+      "uuid": "e8899a8e-729a-43bc-aebf-95e12c6c6db6",
+      "tls": {
+        "enabled": true,
+        "server_name": "vless.ccdd.site",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/?ed=2560",
+        "headers": {
+          "host": "vless.ccdd.site"
+        }
+      }
+    },
+    {
+      "tag": "CN-Tencent 2",
+      "server": "101.42.29.143",
+      "server_port": 443,
+      "type": "vless",
+      "uuid": "e8899a8e-729a-43bc-aebf-95e12c6c6db6",
+      "tls": {
+        "enabled": true,
+        "server_name": "vless.ccdd.site",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/?ed=2560",
+        "headers": {
+          "host": "vless.ccdd.site"
+        }
+      }
+    },
+    {
+      "tag": "CN-Tencent 3",
+      "server": "140.143.217.136",
+      "server_port": 443,
+      "type": "vless",
+      "uuid": "e8899a8e-729a-43bc-aebf-95e12c6c6db6",
+      "tls": {
+        "enabled": true,
+        "server_name": "vless.ccdd.site",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/?ed=2560",
+        "headers": {
+          "host": "vless.ccdd.site"
+        }
+      }
+    },
+    {
+      "tag": "CN-Tencent 4",
+      "server": "101.43.240.3",
+      "server_port": 443,
+      "type": "vless",
+      "uuid": "e8899a8e-729a-43bc-aebf-95e12c6c6db6",
+      "tls": {
+        "enabled": true,
+        "server_name": "vless.ccdd.site",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/?ed=2560",
+        "headers": {
+          "host": "vless.ccdd.site"
+        }
+      }
+    },
+    {
+      "tag": "CN-Tencent 5",
+      "server": "82.157.247.113",
+      "server_port": 443,
+      "type": "vless",
+      "uuid": "e8899a8e-729a-43bc-aebf-95e12c6c6db6",
+      "tls": {
+        "enabled": true,
+        "server_name": "vless.ccdd.site",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/?ed=2560",
+        "headers": {
+          "host": "vless.ccdd.site"
+        }
+      }
+    },
+    {
+      "tag": "法国巴黎",
+      "server": "158.178.196.15",
+      "server_port": 2053,
+      "type": "vless",
+      "uuid": "e8899a8e-729a-43bc-aebf-95e12c6c6db6",
+      "tls": {
+        "enabled": true,
+        "server_name": "vless.ccdd.site",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/?ed=2560",
+        "headers": {
+          "host": "vless.ccdd.site"
+        }
+      }
+    },
+    {
+      "tag": "美国圣何塞",
+      "server": "155.248.192.204",
+      "server_port": 34237,
+      "type": "vless",
+      "uuid": "e8899a8e-729a-43bc-aebf-95e12c6c6db6",
+      "tls": {
+        "enabled": true,
+        "server_name": "vless.ccdd.site",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/?ed=2560",
+        "headers": {
+          "host": "vless.ccdd.site"
+        }
+      }
+    },
+    {
+      "tag": "TR 土耳其",
+      "server": "62.3.12.185",
+      "server_port": 443,
+      "type": "vless",
+      "uuid": "e8899a8e-729a-43bc-aebf-95e12c6c6db6",
+      "tls": {
+        "enabled": true,
+        "server_name": "vless.ccdd.site",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/?ed=2560",
+        "headers": {
+          "host": "vless.ccdd.site"
+        }
+      }
+    },
+    {
+      "tag": "GE 格鲁吉亚",
+      "server": "185.143.179.94",
+      "server_port": 443,
+      "type": "vless",
+      "uuid": "e8899a8e-729a-43bc-aebf-95e12c6c6db6",
+      "tls": {
+        "enabled": true,
+        "server_name": "vless.ccdd.site",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/?ed=2560",
+        "headers": {
+          "host": "vless.ccdd.site"
+        }
+      }
+    },
+    {
+      "tag": "BG 保加利亚",
+      "server": "91.210.166.82",
+      "server_port": 443,
+      "type": "vless",
+      "uuid": "e8899a8e-729a-43bc-aebf-95e12c6c6db6",
+      "tls": {
+        "enabled": true,
+        "server_name": "vless.ccdd.site",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/?ed=2560",
+        "headers": {
+          "host": "vless.ccdd.site"
+        }
+      }
+    },
+    {
+      "tag": "NO 挪威",
+      "server": "46.29.238.54",
+      "server_port": 8443,
+      "type": "vless",
+      "uuid": "e8899a8e-729a-43bc-aebf-95e12c6c6db6",
+      "tls": {
+        "enabled": true,
+        "server_name": "vless.ccdd.site",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/?ed=2560",
+        "headers": {
+          "host": "vless.ccdd.site"
+        }
+      }
+    },
+    {
+      "tag": "CL 智利",
+      "server": "186.67.70.55",
+      "server_port": 443,
+      "type": "vless",
+      "uuid": "e8899a8e-729a-43bc-aebf-95e12c6c6db6",
+      "tls": {
+        "enabled": true,
+        "server_name": "vless.ccdd.site",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/?ed=2560",
+        "headers": {
+          "host": "vless.ccdd.site"
+        }
+      }
+    },
+    {
+      "tag": "AT 奥地利",
+      "server": "195.123.230.40",
+      "server_port": 443,
+      "type": "vless",
+      "uuid": "e8899a8e-729a-43bc-aebf-95e12c6c6db6",
+      "tls": {
+        "enabled": true,
+        "server_name": "vless.ccdd.site",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/?ed=2560",
+        "headers": {
+          "host": "vless.ccdd.site"
+        }
+      }
+    },
+    {
+      "tag": "HU 匈牙利",
+      "server": "91.219.237.49",
+      "server_port": 443,
+      "type": "vless",
+      "uuid": "e8899a8e-729a-43bc-aebf-95e12c6c6db6",
+      "tls": {
+        "enabled": true,
+        "server_name": "vless.ccdd.site",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/?ed=2560",
+        "headers": {
+          "host": "vless.ccdd.site"
+        }
+      }
+    },
+    {
+      "tag": "LT 立陶宛",
+      "server": "88.119.161.187",
+      "server_port": 443,
+      "type": "vless",
+      "uuid": "e8899a8e-729a-43bc-aebf-95e12c6c6db6",
+      "tls": {
+        "enabled": true,
+        "server_name": "vless.ccdd.site",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/?ed=2560",
+        "headers": {
+          "host": "vless.ccdd.site"
+        }
+      }
+    },
+    {
+      "tag": "JP 日本",
+      "server": "14.48.49.133",
+      "server_port": 10000,
+      "type": "vless",
+      "uuid": "e8899a8e-729a-43bc-aebf-95e12c6c6db6",
+      "tls": {
+        "enabled": true,
+        "server_name": "vless.ccdd.site",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/?ed=2560",
+        "headers": {
+          "host": "vless.ccdd.site"
+        }
+      }
+    },
+    {
+      "tag": "KR 韩国",
+      "server": "183.98.53.177",
+      "server_port": 10911,
+      "type": "vless",
+      "uuid": "e8899a8e-729a-43bc-aebf-95e12c6c6db6",
+      "tls": {
+        "enabled": true,
+        "server_name": "vless.ccdd.site",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/?ed=2560",
+        "headers": {
+          "host": "vless.ccdd.site"
+        }
+      }
+    },
+    {
+      "tag": "US 美国",
+      "server": "89.213.182.246",
+      "server_port": 60002,
+      "type": "vless",
+      "uuid": "e8899a8e-729a-43bc-aebf-95e12c6c6db6",
+      "tls": {
+        "enabled": true,
+        "server_name": "vless.ccdd.site",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/?ed=2560",
+        "headers": {
+          "host": "vless.ccdd.site"
+        }
+      }
+    },
+    {
+      "tag": "US 美国 2",
+      "server": "154.29.147.199",
+      "server_port": 443,
+      "type": "vless",
+      "uuid": "e8899a8e-729a-43bc-aebf-95e12c6c6db6",
+      "tls": {
+        "enabled": true,
+        "server_name": "vless.ccdd.site",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/?ed=2560",
+        "headers": {
+          "host": "vless.ccdd.site"
+        }
+      }
+    },
+    {
+      "tag": "KR 韩国 2",
+      "server": "218.159.236.206",
+      "server_port": 50000,
+      "type": "vless",
+      "uuid": "e8899a8e-729a-43bc-aebf-95e12c6c6db6",
+      "tls": {
+        "enabled": true,
+        "server_name": "vless.ccdd.site",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/?ed=2560",
+        "headers": {
+          "host": "vless.ccdd.site"
+        }
+      }
+    },
+    {
+      "tag": "KR 韩国 3",
+      "server": "220.116.16.129",
+      "server_port": 50000,
+      "type": "vless",
+      "uuid": "e8899a8e-729a-43bc-aebf-95e12c6c6db6",
+      "tls": {
+        "enabled": true,
+        "server_name": "vless.ccdd.site",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/?ed=2560",
+        "headers": {
+          "host": "vless.ccdd.site"
+        }
+      }
+    },
+    {
+      "tag": "KR 韩国 4",
+      "server": "211.217.223.187",
+      "server_port": 50000,
+      "type": "vless",
+      "uuid": "e8899a8e-729a-43bc-aebf-95e12c6c6db6",
+      "tls": {
+        "enabled": true,
+        "server_name": "vless.ccdd.site",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/?ed=2560",
+        "headers": {
+          "host": "vless.ccdd.site"
+        }
+      }
+    },
+    {
+      "tag": "KR 韩国 5",
+      "server": "218.152.197.93",
+      "server_port": 50000,
+      "type": "vless",
+      "uuid": "e8899a8e-729a-43bc-aebf-95e12c6c6db6",
+      "tls": {
+        "enabled": true,
+        "server_name": "vless.ccdd.site",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/?ed=2560",
+        "headers": {
+          "host": "vless.ccdd.site"
+        }
+      }
+    },
+    {
+      "tag": "KR 韩国 6",
+      "server": "61.81.13.82",
+      "server_port": 50000,
+      "type": "vless",
+      "uuid": "e8899a8e-729a-43bc-aebf-95e12c6c6db6",
+      "tls": {
+        "enabled": true,
+        "server_name": "vless.ccdd.site",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/?ed=2560",
+        "headers": {
+          "host": "vless.ccdd.site"
+        }
+      }
+    },
+    {
+      "tag": "KR 韩国 7",
+      "server": "220.93.91.175",
+      "server_port": 50000,
+      "type": "vless",
+      "uuid": "e8899a8e-729a-43bc-aebf-95e12c6c6db6",
+      "tls": {
+        "enabled": true,
+        "server_name": "vless.ccdd.site",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/?ed=2560",
+        "headers": {
+          "host": "vless.ccdd.site"
+        }
+      }
+    },
+    {
+      "tag": "KR 韩国 8",
+      "server": "210.99.119.3",
+      "server_port": 50000,
+      "type": "vless",
+      "uuid": "e8899a8e-729a-43bc-aebf-95e12c6c6db6",
+      "tls": {
+        "enabled": true,
+        "server_name": "vless.ccdd.site",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/?ed=2560",
+        "headers": {
+          "host": "vless.ccdd.site"
+        }
+      }
+    },
+    {
+      "tag": "KR 韩国 9",
+      "server": "211.219.199.21",
+      "server_port": 50000,
+      "type": "vless",
+      "uuid": "e8899a8e-729a-43bc-aebf-95e12c6c6db6",
+      "tls": {
+        "enabled": true,
+        "server_name": "vless.ccdd.site",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/?ed=2560",
+        "headers": {
+          "host": "vless.ccdd.site"
+        }
+      }
+    },
+    {
+      "tag": "KR 韩国 10",
+      "server": "222.119.218.222",
+      "server_port": 50000,
+      "type": "vless",
+      "uuid": "e8899a8e-729a-43bc-aebf-95e12c6c6db6",
+      "tls": {
+        "enabled": true,
+        "server_name": "vless.ccdd.site",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/?ed=2560",
+        "headers": {
+          "host": "vless.ccdd.site"
+        }
+      }
+    },
+    {
+      "tag": "KR 韩国 11",
+      "server": "112.164.28.162",
+      "server_port": 50000,
+      "type": "vless",
+      "uuid": "e8899a8e-729a-43bc-aebf-95e12c6c6db6",
+      "tls": {
+        "enabled": true,
+        "server_name": "vless.ccdd.site",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/?ed=2560",
+        "headers": {
+          "host": "vless.ccdd.site"
+        }
+      }
+    },
+    {
+      "tag": "KR 韩国 12",
+      "server": "222.103.6.229",
+      "server_port": 50000,
+      "type": "vless",
+      "uuid": "e8899a8e-729a-43bc-aebf-95e12c6c6db6",
+      "tls": {
+        "enabled": true,
+        "server_name": "vless.ccdd.site",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/?ed=2560",
+        "headers": {
+          "host": "vless.ccdd.site"
+        }
+      }
+    },
+    {
+      "tag": "KR 韩国 13",
+      "server": "175.212.197.193",
+      "server_port": 50000,
+      "type": "vless",
+      "uuid": "e8899a8e-729a-43bc-aebf-95e12c6c6db6",
+      "tls": {
+        "enabled": true,
+        "server_name": "vless.ccdd.site",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/?ed=2560",
+        "headers": {
+          "host": "vless.ccdd.site"
+        }
+      }
+    },
+    {
+      "tag": "KR 韩国 14",
+      "server": "222.102.190.56",
+      "server_port": 50000,
+      "type": "vless",
+      "uuid": "e8899a8e-729a-43bc-aebf-95e12c6c6db6",
+      "tls": {
+        "enabled": true,
+        "server_name": "vless.ccdd.site",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/?ed=2560",
+        "headers": {
+          "host": "vless.ccdd.site"
+        }
+      }
+    },
+    {
+      "tag": "KR 韩国 15",
+      "server": "175.208.111.195",
+      "server_port": 50000,
+      "type": "vless",
+      "uuid": "e8899a8e-729a-43bc-aebf-95e12c6c6db6",
+      "tls": {
+        "enabled": true,
+        "server_name": "vless.ccdd.site",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/?ed=2560",
+        "headers": {
+          "host": "vless.ccdd.site"
+        }
+      }
+    },
+    {
+      "tag": "KR 韩国 16",
+      "server": "121.190.128.166",
+      "server_port": 12345,
+      "type": "vless",
+      "uuid": "e8899a8e-729a-43bc-aebf-95e12c6c6db6",
+      "tls": {
+        "enabled": true,
+        "server_name": "vless.ccdd.site",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/?ed=2560",
+        "headers": {
+          "host": "vless.ccdd.site"
+        }
+      }
+    },
+    {
+      "tag": "KR 韩国 17",
+      "server": "121.162.48.85",
+      "server_port": 50000,
+      "type": "vless",
+      "uuid": "e8899a8e-729a-43bc-aebf-95e12c6c6db6",
+      "tls": {
+        "enabled": true,
+        "server_name": "vless.ccdd.site",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/?ed=2560",
+        "headers": {
+          "host": "vless.ccdd.site"
+        }
+      }
+    },
+    {
+      "tag": "KR 韩国 18",
+      "server": "183.102.23.76",
+      "server_port": 50000,
+      "type": "vless",
+      "uuid": "e8899a8e-729a-43bc-aebf-95e12c6c6db6",
+      "tls": {
+        "enabled": true,
+        "server_name": "vless.ccdd.site",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/?ed=2560",
+        "headers": {
+          "host": "vless.ccdd.site"
+        }
+      }
+    },
+    {
+      "tag": "KR 韩国 19",
+      "server": "121.177.19.87",
+      "server_port": 50000,
+      "type": "vless",
+      "uuid": "e8899a8e-729a-43bc-aebf-95e12c6c6db6",
+      "tls": {
+        "enabled": true,
+        "server_name": "vless.ccdd.site",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/?ed=2560",
+        "headers": {
+          "host": "vless.ccdd.site"
+        }
+      }
+    },
+    {
+      "tag": "KR 韩国 20",
+      "server": "59.23.75.51",
+      "server_port": 50000,
+      "type": "vless",
+      "uuid": "e8899a8e-729a-43bc-aebf-95e12c6c6db6",
+      "tls": {
+        "enabled": true,
+        "server_name": "vless.ccdd.site",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/?ed=2560",
+        "headers": {
+          "host": "vless.ccdd.site"
+        }
+      }
+    },
+    {
+      "tag": "KR 韩国 21",
+      "server": "175.205.113.47",
+      "server_port": 50000,
+      "type": "vless",
+      "uuid": "e8899a8e-729a-43bc-aebf-95e12c6c6db6",
+      "tls": {
+        "enabled": true,
+        "server_name": "vless.ccdd.site",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/?ed=2560",
+        "headers": {
+          "host": "vless.ccdd.site"
+        }
+      }
+    },
+    {
+      "tag": "KR 韩国 22",
+      "server": "211.221.84.13",
+      "server_port": 50000,
+      "type": "vless",
+      "uuid": "e8899a8e-729a-43bc-aebf-95e12c6c6db6",
+      "tls": {
+        "enabled": true,
+        "server_name": "vless.ccdd.site",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/?ed=2560",
+        "headers": {
+          "host": "vless.ccdd.site"
+        }
+      }
+    },
+    {
+      "tag": "KR 韩国 23",
+      "server": "121.185.50.225",
+      "server_port": 50000,
+      "type": "vless",
+      "uuid": "e8899a8e-729a-43bc-aebf-95e12c6c6db6",
+      "tls": {
+        "enabled": true,
+        "server_name": "vless.ccdd.site",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/?ed=2560",
+        "headers": {
+          "host": "vless.ccdd.site"
+        }
+      }
+    },
+    {
+      "tag": "KR 韩国 24",
+      "server": "211.184.85.221",
+      "server_port": 50000,
+      "type": "vless",
+      "uuid": "e8899a8e-729a-43bc-aebf-95e12c6c6db6",
+      "tls": {
+        "enabled": true,
+        "server_name": "vless.ccdd.site",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/?ed=2560",
+        "headers": {
+          "host": "vless.ccdd.site"
+        }
+      }
+    },
+    {
+      "tag": "KR 韩国 25",
+      "server": "211.39.65.170",
+      "server_port": 50000,
+      "type": "vless",
+      "uuid": "e8899a8e-729a-43bc-aebf-95e12c6c6db6",
+      "tls": {
+        "enabled": true,
+        "server_name": "vless.ccdd.site",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/?ed=2560",
+        "headers": {
+          "host": "vless.ccdd.site"
+        }
+      }
+    },
+    {
+      "tag": "KR 韩国 26",
+      "server": "222.113.24.84",
+      "server_port": 50000,
+      "type": "vless",
+      "uuid": "e8899a8e-729a-43bc-aebf-95e12c6c6db6",
+      "tls": {
+        "enabled": true,
+        "server_name": "vless.ccdd.site",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/?ed=2560",
+        "headers": {
+          "host": "vless.ccdd.site"
+        }
+      }
+    },
+    {
+      "tag": "KR 韩国 27",
+      "server": "118.40.208.164",
+      "server_port": 50000,
+      "type": "vless",
+      "uuid": "e8899a8e-729a-43bc-aebf-95e12c6c6db6",
+      "tls": {
+        "enabled": true,
+        "server_name": "vless.ccdd.site",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/?ed=2560",
+        "headers": {
+          "host": "vless.ccdd.site"
+        }
+      }
+    },
+    {
+      "tag": "KR 韩国 28",
+      "server": "221.164.192.95",
+      "server_port": 50000,
+      "type": "vless",
+      "uuid": "e8899a8e-729a-43bc-aebf-95e12c6c6db6",
+      "tls": {
+        "enabled": true,
+        "server_name": "vless.ccdd.site",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/?ed=2560",
+        "headers": {
+          "host": "vless.ccdd.site"
+        }
+      }
+    },
+    {
+      "tag": "KR 韩国 29",
+      "server": "14.40.125.217",
+      "server_port": 50000,
+      "type": "vless",
+      "uuid": "e8899a8e-729a-43bc-aebf-95e12c6c6db6",
+      "tls": {
+        "enabled": true,
+        "server_name": "vless.ccdd.site",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/?ed=2560",
+        "headers": {
+          "host": "vless.ccdd.site"
+        }
+      }
+    },
+    {
+      "tag": "KR 韩国 30",
+      "server": "119.197.35.190",
+      "server_port": 50000,
+      "type": "vless",
+      "uuid": "e8899a8e-729a-43bc-aebf-95e12c6c6db6",
+      "tls": {
+        "enabled": true,
+        "server_name": "vless.ccdd.site",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/?ed=2560",
+        "headers": {
+          "host": "vless.ccdd.site"
+        }
+      }
+    },
+    {
+      "tag": "KR 韩国 31",
+      "server": "211.218.223.130",
+      "server_port": 50000,
+      "type": "vless",
+      "uuid": "e8899a8e-729a-43bc-aebf-95e12c6c6db6",
+      "tls": {
+        "enabled": true,
+        "server_name": "vless.ccdd.site",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/?ed=2560",
+        "headers": {
+          "host": "vless.ccdd.site"
+        }
+      }
+    },
+    {
+      "tag": "KR 韩国 32",
+      "server": "121.179.174.25",
+      "server_port": 50000,
+      "type": "vless",
+      "uuid": "e8899a8e-729a-43bc-aebf-95e12c6c6db6",
+      "tls": {
+        "enabled": true,
+        "server_name": "vless.ccdd.site",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/?ed=2560",
+        "headers": {
+          "host": "vless.ccdd.site"
+        }
+      }
+    },
+    {
+      "tag": "KR 韩国 33",
+      "server": "183.100.116.217",
+      "server_port": 50000,
+      "type": "vless",
+      "uuid": "e8899a8e-729a-43bc-aebf-95e12c6c6db6",
+      "tls": {
+        "enabled": true,
+        "server_name": "vless.ccdd.site",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/?ed=2560",
+        "headers": {
+          "host": "vless.ccdd.site"
+        }
+      }
+    },
+    {
+      "tag": "KR 韩国 34",
+      "server": "220.81.50.93",
+      "server_port": 50000,
+      "type": "vless",
+      "uuid": "e8899a8e-729a-43bc-aebf-95e12c6c6db6",
+      "tls": {
+        "enabled": true,
+        "server_name": "vless.ccdd.site",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/?ed=2560",
+        "headers": {
+          "host": "vless.ccdd.site"
+        }
+      }
+    },
+    {
+      "tag": "KR 韩国 35",
+      "server": "211.221.90.175",
+      "server_port": 50000,
+      "type": "vless",
+      "uuid": "e8899a8e-729a-43bc-aebf-95e12c6c6db6",
+      "tls": {
+        "enabled": true,
+        "server_name": "vless.ccdd.site",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/?ed=2560",
+        "headers": {
+          "host": "vless.ccdd.site"
+        }
+      }
+    },
+    {
+      "tag": "KR 韩国 36",
+      "server": "210.223.64.192",
+      "server_port": 50000,
+      "type": "vless",
+      "uuid": "e8899a8e-729a-43bc-aebf-95e12c6c6db6",
+      "tls": {
+        "enabled": true,
+        "server_name": "vless.ccdd.site",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/?ed=2560",
+        "headers": {
+          "host": "vless.ccdd.site"
+        }
+      }
+    },
+    {
+      "tag": "KR 韩国 37",
+      "server": "168.126.205.5",
+      "server_port": 50000,
+      "type": "vless",
+      "uuid": "e8899a8e-729a-43bc-aebf-95e12c6c6db6",
+      "tls": {
+        "enabled": true,
+        "server_name": "vless.ccdd.site",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/?ed=2560",
+        "headers": {
+          "host": "vless.ccdd.site"
+        }
+      }
+    },
+    {
+      "tag": "KR 韩国 38",
+      "server": "220.86.104.93",
+      "server_port": 50000,
+      "type": "vless",
+      "uuid": "e8899a8e-729a-43bc-aebf-95e12c6c6db6",
+      "tls": {
+        "enabled": true,
+        "server_name": "vless.ccdd.site",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/?ed=2560",
+        "headers": {
+          "host": "vless.ccdd.site"
+        }
+      }
+    },
+    {
+      "tag": "KR 韩国 39",
+      "server": "125.134.160.98",
+      "server_port": 50000,
+      "type": "vless",
+      "uuid": "e8899a8e-729a-43bc-aebf-95e12c6c6db6",
+      "tls": {
+        "enabled": true,
+        "server_name": "vless.ccdd.site",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/?ed=2560",
+        "headers": {
+          "host": "vless.ccdd.site"
+        }
+      }
+    },
+    {
+      "tag": "KR 韩国 40",
+      "server": "118.38.253.7",
+      "server_port": 50000,
+      "type": "vless",
+      "uuid": "e8899a8e-729a-43bc-aebf-95e12c6c6db6",
+      "tls": {
+        "enabled": true,
+        "server_name": "vless.ccdd.site",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/?ed=2560",
+        "headers": {
+          "host": "vless.ccdd.site"
+        }
+      }
+    },
+    {
+      "tag": "KR 韩国 41",
+      "server": "59.30.229.78",
+      "server_port": 50000,
+      "type": "vless",
+      "uuid": "e8899a8e-729a-43bc-aebf-95e12c6c6db6",
+      "tls": {
+        "enabled": true,
+        "server_name": "vless.ccdd.site",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/?ed=2560",
+        "headers": {
+          "host": "vless.ccdd.site"
+        }
+      }
+    },
+    {
+      "tag": "KR 韩国 42",
+      "server": "175.203.30.93",
+      "server_port": 50000,
+      "type": "vless",
+      "uuid": "e8899a8e-729a-43bc-aebf-95e12c6c6db6",
+      "tls": {
+        "enabled": true,
+        "server_name": "vless.ccdd.site",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/?ed=2560",
+        "headers": {
+          "host": "vless.ccdd.site"
+        }
+      }
+    },
+    {
+      "tag": "KR 韩国 43",
+      "server": "125.134.172.40",
+      "server_port": 50000,
+      "type": "vless",
+      "uuid": "e8899a8e-729a-43bc-aebf-95e12c6c6db6",
+      "tls": {
+        "enabled": true,
+        "server_name": "vless.ccdd.site",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/?ed=2560",
+        "headers": {
+          "host": "vless.ccdd.site"
+        }
+      }
+    },
+    {
+      "tag": "KR 韩国 44",
+      "server": "211.38.187.102",
+      "server_port": 50000,
+      "type": "vless",
+      "uuid": "e8899a8e-729a-43bc-aebf-95e12c6c6db6",
+      "tls": {
+        "enabled": true,
+        "server_name": "vless.ccdd.site",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/?ed=2560",
+        "headers": {
+          "host": "vless.ccdd.site"
+        }
+      }
+    },
+    {
+      "tag": "KR 韩国 45",
+      "server": "125.142.102.60",
+      "server_port": 50000,
+      "type": "vless",
+      "uuid": "e8899a8e-729a-43bc-aebf-95e12c6c6db6",
+      "tls": {
+        "enabled": true,
+        "server_name": "vless.ccdd.site",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/?ed=2560",
+        "headers": {
+          "host": "vless.ccdd.site"
+        }
+      }
+    },
+    {
+      "tag": "KR 韩国 46",
+      "server": "61.74.55.112",
+      "server_port": 50000,
+      "type": "vless",
+      "uuid": "e8899a8e-729a-43bc-aebf-95e12c6c6db6",
+      "tls": {
+        "enabled": true,
+        "server_name": "vless.ccdd.site",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/?ed=2560",
+        "headers": {
+          "host": "vless.ccdd.site"
+        }
+      }
+    },
+    {
+      "tag": "KR 韩国 47",
+      "server": "221.160.205.90",
+      "server_port": 50000,
+      "type": "vless",
+      "uuid": "e8899a8e-729a-43bc-aebf-95e12c6c6db6",
+      "tls": {
+        "enabled": true,
+        "server_name": "vless.ccdd.site",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/?ed=2560",
+        "headers": {
+          "host": "vless.ccdd.site"
+        }
+      }
+    },
+    {
+      "tag": "KR 韩国 48",
+      "server": "183.106.203.112",
+      "server_port": 50000,
+      "type": "vless",
+      "uuid": "e8899a8e-729a-43bc-aebf-95e12c6c6db6",
+      "tls": {
+        "enabled": true,
+        "server_name": "vless.ccdd.site",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/?ed=2560",
+        "headers": {
+          "host": "vless.ccdd.site"
+        }
+      }
+    },
+    {
+      "tag": "KR 韩国 49",
+      "server": "211.220.61.191",
+      "server_port": 50000,
+      "type": "vless",
+      "uuid": "e8899a8e-729a-43bc-aebf-95e12c6c6db6",
+      "tls": {
+        "enabled": true,
+        "server_name": "vless.ccdd.site",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/?ed=2560",
+        "headers": {
+          "host": "vless.ccdd.site"
+        }
+      }
+    },
+    {
+      "tag": "KR 韩国 50",
+      "server": "183.98.150.78",
+      "server_port": 50000,
+      "type": "vless",
+      "uuid": "e8899a8e-729a-43bc-aebf-95e12c6c6db6",
+      "tls": {
+        "enabled": true,
+        "server_name": "vless.ccdd.site",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/?ed=2560",
+        "headers": {
+          "host": "vless.ccdd.site"
+        }
+      }
+    },
+    {
+      "tag": "KR 韩国 51",
+      "server": "118.46.82.85",
+      "server_port": 50000,
+      "type": "vless",
+      "uuid": "e8899a8e-729a-43bc-aebf-95e12c6c6db6",
+      "tls": {
+        "enabled": true,
+        "server_name": "vless.ccdd.site",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/?ed=2560",
+        "headers": {
+          "host": "vless.ccdd.site"
+        }
+      }
+    },
+    {
+      "tag": "KR 韩国 52",
+      "server": "112.168.104.94",
+      "server_port": 50000,
+      "type": "vless",
+      "uuid": "e8899a8e-729a-43bc-aebf-95e12c6c6db6",
+      "tls": {
+        "enabled": true,
+        "server_name": "vless.ccdd.site",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/?ed=2560",
+        "headers": {
+          "host": "vless.ccdd.site"
+        }
+      }
+    },
+    {
+      "tag": "KR 韩国 53",
+      "server": "175.199.253.60",
+      "server_port": 50000,
+      "type": "vless",
+      "uuid": "e8899a8e-729a-43bc-aebf-95e12c6c6db6",
+      "tls": {
+        "enabled": true,
+        "server_name": "vless.ccdd.site",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/?ed=2560",
+        "headers": {
+          "host": "vless.ccdd.site"
+        }
+      }
+    },
+    {
+      "tag": "KR 韩国 54",
+      "server": "220.121.176.109",
+      "server_port": 50000,
+      "type": "vless",
+      "uuid": "e8899a8e-729a-43bc-aebf-95e12c6c6db6",
+      "tls": {
+        "enabled": true,
+        "server_name": "vless.ccdd.site",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/?ed=2560",
+        "headers": {
+          "host": "vless.ccdd.site"
+        }
+      }
+    },
+    {
+      "tag": "KR 韩国 55",
+      "server": "221.163.156.101",
+      "server_port": 50000,
+      "type": "vless",
+      "uuid": "e8899a8e-729a-43bc-aebf-95e12c6c6db6",
+      "tls": {
+        "enabled": true,
+        "server_name": "vless.ccdd.site",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/?ed=2560",
+        "headers": {
+          "host": "vless.ccdd.site"
+        }
+      }
+    },
+    {
+      "tag": "KR 韩国 56",
+      "server": "112.166.255.224",
+      "server_port": 50000,
+      "type": "vless",
+      "uuid": "e8899a8e-729a-43bc-aebf-95e12c6c6db6",
+      "tls": {
+        "enabled": true,
+        "server_name": "vless.ccdd.site",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/?ed=2560",
+        "headers": {
+          "host": "vless.ccdd.site"
+        }
+      }
+    },
+    {
+      "tag": "KR 韩国 57",
+      "server": "221.163.102.207",
+      "server_port": 50000,
+      "type": "vless",
+      "uuid": "e8899a8e-729a-43bc-aebf-95e12c6c6db6",
+      "tls": {
+        "enabled": true,
+        "server_name": "vless.ccdd.site",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/?ed=2560",
+        "headers": {
+          "host": "vless.ccdd.site"
+        }
+      }
+    },
+    {
+      "tag": "KR 韩国 58",
+      "server": "119.192.167.123",
+      "server_port": 10000,
+      "type": "vless",
+      "uuid": "e8899a8e-729a-43bc-aebf-95e12c6c6db6",
+      "tls": {
+        "enabled": true,
+        "server_name": "vless.ccdd.site",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/?ed=2560",
+        "headers": {
+          "host": "vless.ccdd.site"
+        }
+      }
+    },
+    {
+      "tag": "KR 韩国 59",
+      "server": "210.222.94.203",
+      "server_port": 50000,
+      "type": "vless",
+      "uuid": "e8899a8e-729a-43bc-aebf-95e12c6c6db6",
+      "tls": {
+        "enabled": true,
+        "server_name": "vless.ccdd.site",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/?ed=2560",
+        "headers": {
+          "host": "vless.ccdd.site"
+        }
+      }
+    },
+    {
+      "tag": "KR 韩国 60",
+      "server": "14.49.244.188",
+      "server_port": 50000,
+      "type": "vless",
+      "uuid": "e8899a8e-729a-43bc-aebf-95e12c6c6db6",
+      "tls": {
+        "enabled": true,
+        "server_name": "vless.ccdd.site",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/?ed=2560",
+        "headers": {
+          "host": "vless.ccdd.site"
+        }
+      }
+    },
+    {
+      "tag": "KR 韩国 61",
+      "server": "222.104.180.40",
+      "server_port": 50000,
+      "type": "vless",
+      "uuid": "e8899a8e-729a-43bc-aebf-95e12c6c6db6",
+      "tls": {
+        "enabled": true,
+        "server_name": "vless.ccdd.site",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/?ed=2560",
+        "headers": {
+          "host": "vless.ccdd.site"
+        }
+      }
+    },
+    {
+      "tag": "US 美国 3",
+      "server": "65.75.194.43",
+      "server_port": 10511,
+      "type": "vless",
+      "uuid": "e8899a8e-729a-43bc-aebf-95e12c6c6db6",
+      "tls": {
+        "enabled": true,
+        "server_name": "vless.ccdd.site",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/?ed=2560",
+        "headers": {
+          "host": "vless.ccdd.site"
+        }
+      }
+    },
+    {
+      "tag": "US 美国 4",
+      "server": "45.59.184.16",
+      "server_port": 38908,
+      "type": "vless",
+      "uuid": "e8899a8e-729a-43bc-aebf-95e12c6c6db6",
+      "tls": {
+        "enabled": true,
+        "server_name": "vless.ccdd.site",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/?ed=2560",
+        "headers": {
+          "host": "vless.ccdd.site"
+        }
+      }
+    },
+    {
+      "tag": "US 美国 5",
+      "server": "65.75.193.154",
+      "server_port": 14491,
+      "type": "vless",
+      "uuid": "e8899a8e-729a-43bc-aebf-95e12c6c6db6",
+      "tls": {
+        "enabled": true,
+        "server_name": "vless.ccdd.site",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/?ed=2560",
+        "headers": {
+          "host": "vless.ccdd.site"
+        }
+      }
+    },
+    {
+      "tag": "FRA",
+      "server": "38.59.230.15",
+      "server_port": 49694,
+      "type": "vless",
+      "uuid": "e8899a8e-729a-43bc-aebf-95e12c6c6db6",
+      "tls": {
+        "enabled": true,
+        "server_name": "vless.ccdd.site",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/?ed=2560",
+        "headers": {
+          "host": "vless.ccdd.site"
+        }
+      }
+    },
+    {
+      "tag": "JP 日本 2",
+      "server": "103.75.70.171",
+      "server_port": 14722,
+      "type": "vless",
+      "uuid": "e8899a8e-729a-43bc-aebf-95e12c6c6db6",
+      "tls": {
+        "enabled": true,
+        "server_name": "vless.ccdd.site",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/?ed=2560",
+        "headers": {
+          "host": "vless.ccdd.site"
+        }
+      }
+    },
+    {
+      "tag": "US 美国 6",
+      "server": "154.9.233.232",
+      "server_port": 443,
+      "type": "vless",
+      "uuid": "e8899a8e-729a-43bc-aebf-95e12c6c6db6",
+      "tls": {
+        "enabled": true,
+        "server_name": "vless.ccdd.site",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/?ed=2560",
+        "headers": {
+          "host": "vless.ccdd.site"
+        }
+      }
+    },
+    {
+      "tag": "HK 香港",
+      "server": "62.72.163.169",
+      "server_port": 51206,
+      "type": "vless",
+      "uuid": "e8899a8e-729a-43bc-aebf-95e12c6c6db6",
+      "tls": {
+        "enabled": true,
+        "server_name": "vless.ccdd.site",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/?ed=2560",
+        "headers": {
+          "host": "vless.ccdd.site"
+        }
+      }
+    },
+    {
+      "tag": "EWR",
+      "server": "38.147.188.89",
+      "server_port": 8011,
+      "type": "vless",
+      "uuid": "e8899a8e-729a-43bc-aebf-95e12c6c6db6",
+      "tls": {
+        "enabled": true,
+        "server_name": "vless.ccdd.site",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/?ed=2560",
+        "headers": {
+          "host": "vless.ccdd.site"
+        }
+      }
+    },
+    {
+      "tag": "US 美国 7",
+      "server": "103.95.207.121",
+      "server_port": 55708,
+      "type": "vless",
+      "uuid": "e8899a8e-729a-43bc-aebf-95e12c6c6db6",
+      "tls": {
+        "enabled": true,
+        "server_name": "vless.ccdd.site",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/?ed=2560",
+        "headers": {
+          "host": "vless.ccdd.site"
+        }
+      }
+    },
+    {
+      "tag": "US 美国 8",
+      "server": "103.101.153.226",
+      "server_port": 21010,
+      "type": "vless",
+      "uuid": "e8899a8e-729a-43bc-aebf-95e12c6c6db6",
+      "tls": {
+        "enabled": true,
+        "server_name": "vless.ccdd.site",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/?ed=2560",
+        "headers": {
+          "host": "vless.ccdd.site"
+        }
+      }
+    },
+    {
+      "tag": "[vless]剩余流量：1022.8+GB",
+      "server": "us6.081111.xyz",
+      "server_port": 33352,
+      "type": "vless",
+      "uuid": "1e210d34-160a-4b45-a2fb-bbd1ad721f32",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.bing.com",
+        "reality": {
+          "enabled": true,
+          "public_key": "4V8j16NRrjXH8VyGOXaBU5Y1iuj0NUFvZUZ-7exKRD8",
+          "short_id": "5faf16fb"
+        },
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      }
+    },
+    {
+      "tag": "[vless]距离下次重置剩余：15+天",
+      "server": "us6.081111.xyz",
+      "server_port": 33352,
+      "type": "vless",
+      "uuid": "1e210d34-160a-4b45-a2fb-bbd1ad721f32",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.bing.com",
+        "reality": {
+          "enabled": true,
+          "public_key": "4V8j16NRrjXH8VyGOXaBU5Y1iuj0NUFvZUZ-7exKRD8",
+          "short_id": "5faf16fb"
+        },
+        "utls": {
+          "enabled": true,
+          "fingerprint": "safari"
+        }
+      }
+    },
+    {
+      "tag": "[vless]套餐到期：2025-11-09",
+      "server": "us6.081111.xyz",
+      "server_port": 33352,
+      "type": "vless",
+      "uuid": "1e210d34-160a-4b45-a2fb-bbd1ad721f32",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.bing.com",
+        "reality": {
+          "enabled": true,
+          "public_key": "4V8j16NRrjXH8VyGOXaBU5Y1iuj0NUFvZUZ-7exKRD8",
+          "short_id": "5faf16fb"
+        },
+        "utls": {
+          "enabled": true,
+          "fingerprint": "qq"
+        }
+      }
+    },
+    {
+      "tag": "[vless]过滤掉11条线路",
+      "server": "us6.081111.xyz",
+      "server_port": 33352,
+      "type": "vless",
+      "uuid": "1e210d34-160a-4b45-a2fb-bbd1ad721f32",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.bing.com",
+        "reality": {
+          "enabled": true,
+          "public_key": "4V8j16NRrjXH8VyGOXaBU5Y1iuj0NUFvZUZ-7exKRD8",
+          "short_id": "5faf16fb"
+        },
+        "utls": {
+          "enabled": true,
+          "fingerprint": "ios"
+        }
+      }
+    },
+    {
+      "tag": "[vless]美国双ISP-Vless",
+      "server": "us6.081111.xyz",
+      "server_port": 33352,
+      "type": "vless",
+      "uuid": "1e210d34-160a-4b45-a2fb-bbd1ad721f32",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.bing.com",
+        "reality": {
+          "enabled": true,
+          "public_key": "4V8j16NRrjXH8VyGOXaBU5Y1iuj0NUFvZUZ-7exKRD8",
+          "short_id": "5faf16fb"
+        },
+        "utls": {
+          "enabled": true,
+          "fingerprint": "edge"
+        }
+      }
+    },
+    {
+      "tag": "[vless]JP3-Vless",
+      "server": "jp3.081111.xyz",
+      "server_port": 21515,
+      "type": "vless",
+      "uuid": "1e210d34-160a-4b45-a2fb-bbd1ad721f32",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.bing.com",
+        "reality": {
+          "enabled": true,
+          "public_key": "UrYwQGyLaCqf6im2wgf3Ju2Qrb1vaj0fizIkG5TG-Xg",
+          "short_id": "db223b08"
+        },
+        "utls": {
+          "enabled": true,
+          "fingerprint": "safari"
+        }
+      }
+    },
+    {
+      "tag": "[vless]SGP3-Vless",
+      "server": "sg3.081111.xyz",
+      "server_port": 12366,
+      "type": "vless",
+      "uuid": "1e210d34-160a-4b45-a2fb-bbd1ad721f32",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.bing.com",
+        "reality": {
+          "enabled": true,
+          "public_key": "KxNRmYnJZGiDh1sQwa1XcaudQhB0NFqXJfOEPix9Hg4",
+          "short_id": "cc249d6c"
+        },
+        "utls": {
+          "enabled": true,
+          "fingerprint": "edge"
+        }
+      }
+    },
+    {
+      "tag": "[vless]SGP4-Vless",
+      "server": "sg4.081111.xyz",
+      "server_port": 12306,
+      "type": "vless",
+      "uuid": "1e210d34-160a-4b45-a2fb-bbd1ad721f32",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.bing.com",
+        "reality": {
+          "enabled": true,
+          "public_key": "Xmy5n86Qt07dXiOSyNtUqGsyEjFra7PF6mWgtuq6XCY",
+          "short_id": "0ef1c4cd"
+        },
+        "utls": {
+          "enabled": true,
+          "fingerprint": "qq"
+        }
+      }
+    },
+    {
+      "tag": "[vless]US6-Vless",
+      "server": "us7.081111.xyz",
+      "server_port": 35335,
+      "type": "vless",
+      "uuid": "1e210d34-160a-4b45-a2fb-bbd1ad721f32",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.bing.com",
+        "reality": {
+          "enabled": true,
+          "public_key": "wMusY51rts-7C-62Y7sSASBvFrtIAxtcNCDGzH5TWWs",
+          "short_id": "29986be4"
+        },
+        "utls": {
+          "enabled": true,
+          "fingerprint": "qq"
+        }
+      }
+    },
+    {
+      "tag": "[vless]US7-Vless",
+      "server": "us8.081111.xyz",
+      "server_port": 55121,
+      "type": "vless",
+      "uuid": "1e210d34-160a-4b45-a2fb-bbd1ad721f32",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.bing.com",
+        "reality": {
+          "enabled": true,
+          "public_key": "i8Pt5e4ZjHSEWVK35M5qfCa9lsZeRNP7EfcZck4WHUY",
+          "short_id": "03d9fe68"
+        },
+        "utls": {
+          "enabled": true,
+          "fingerprint": "qq"
+        }
+      }
+    },
+    {
+      "tag": "[vless]HK1-Vless",
+      "server": "hk1.081111.xyz",
+      "server_port": 443,
+      "type": "vless",
+      "uuid": "1e210d34-160a-4b45-a2fb-bbd1ad721f32",
+      "tls": {
+        "enabled": true,
+        "server_name": "hk1.081111.xyz"
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/bing",
+        "headers": {
+          "host": "hk1.081111.xyz"
+        }
+      }
+    },
+    {
+      "tag": "[vless]HK2-Vless",
+      "server": "hk2.081111.xyz",
+      "server_port": 443,
+      "type": "vless",
+      "uuid": "1e210d34-160a-4b45-a2fb-bbd1ad721f32",
+      "tls": {
+        "enabled": true,
+        "server_name": "hk2.081111.xyz"
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/bing",
+        "headers": {
+          "host": "hk2.081111.xyz"
+        }
+      }
+    },
+    {
+      "tag": "[vless]首尔ISP-Vless",
+      "server": "kr1.081111.xyz",
+      "server_port": 33893,
+      "type": "vless",
+      "uuid": "1e210d34-160a-4b45-a2fb-bbd1ad721f32",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.bing.com",
+        "reality": {
+          "enabled": true,
+          "public_key": "ErAPamSd1iX1ag4Vi_pNQ-lR5sxOII_wTl4k5y5dTxQ",
+          "short_id": "88d39f5f"
+        },
+        "utls": {
+          "enabled": true,
+          "fingerprint": "safari"
+        }
+      }
+    },
+    {
+      "tag": "[vless]大田ISP-Vless",
+      "server": "kr2.081111.xyz",
+      "server_port": 33063,
+      "type": "vless",
+      "uuid": "1e210d34-160a-4b45-a2fb-bbd1ad721f32",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.bing.com",
+        "reality": {
+          "enabled": true,
+          "public_key": "s5NMOUv2QwkQX-C5mkTEtrtw3Bv39x6Pr9Imudik2Tc",
+          "short_id": "de470ba0"
+        },
+        "utls": {
+          "enabled": true,
+          "fingerprint": "edge"
+        }
+      }
     }
   ],
   "route": {
     "rule_set": [
-      {
-        "type": "remote",
-        "format": "binary",
-        "download_detour": "Proxy",
-        "tag": "geosite-netflix",
-        "url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/sing/geo/geosite/netflix.srs"
-      },
-      {
-        "type": "remote",
-        "format": "binary",
-        "download_detour": "Proxy",
-        "tag": "geoip-netflix",
-        "url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/sing/geo/geoip/netflix.srs"
-      },
       {
         "type": "remote",
         "format": "binary",
@@ -1311,13 +4244,6 @@
         "download_detour": "Proxy",
         "tag": "geoip-telegram",
         "url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/sing/geo/geoip/telegram.srs"
-      },
-      {
-        "type": "remote",
-        "format": "binary",
-        "download_detour": "Proxy",
-        "tag": "geosite-category-media",
-        "url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/sing/geo/geosite/category-media.srs"
       },
       {
         "type": "remote",
@@ -1344,20 +4270,6 @@
         "type": "remote",
         "format": "binary",
         "download_detour": "Proxy",
-        "tag": "geosite-jetbrains",
-        "url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/sing/geo/geosite/jetbrains.srs"
-      },
-      {
-        "type": "remote",
-        "format": "binary",
-        "download_detour": "Proxy",
-        "tag": "geosite-spotify",
-        "url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/sing/geo/geosite/spotify.srs"
-      },
-      {
-        "type": "remote",
-        "format": "binary",
-        "download_detour": "Proxy",
         "tag": "geosite-cloudflare",
         "url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/sing/geo/geosite/cloudflare.srs"
       },
@@ -1379,8 +4291,8 @@
         "type": "remote",
         "format": "binary",
         "download_detour": "Proxy",
-        "tag": "GeoIP2-CN",
-        "url": "https://wiki.jokin.uk/cnip2.srs"
+        "tag": "geosite-microsoft",
+        "url": "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/sing/geo/geosite/microsoft.srs"
       },
       {
         "type": "remote",
@@ -1457,14 +4369,6 @@
         "outbound": "Proxy"
       },
       {
-        "rule_set": "geosite-netflix",
-        "outbound": "Netflix"
-      },
-      {
-        "rule_set": "geoip-netflix",
-        "outbound": "Netflix"
-      },
-      {
         "rule_set": "geosite-youtube",
         "outbound": "Youtube"
       },
@@ -1475,10 +4379,6 @@
       {
         "rule_set": "geoip-telegram",
         "outbound": "Telegram"
-      },
-      {
-        "rule_set": "geosite-category-media",
-        "outbound": "Category-media"
       },
       {
         "rule_set": "geosite-openai",
@@ -1493,14 +4393,6 @@
         "outbound": "Github"
       },
       {
-        "rule_set": "geosite-jetbrains",
-        "outbound": "Jetbrains"
-      },
-      {
-        "rule_set": "geosite-spotify",
-        "outbound": "Spotify"
-      },
-      {
         "rule_set": "geosite-cloudflare",
         "outbound": "Cloudflare"
       },
@@ -1513,8 +4405,11 @@
         "outbound": "Google"
       },
       {
+        "rule_set": "geosite-microsoft",
+        "outbound": "Microsoft"
+      },
+      {
         "rule_set": [
-          "GeoIP2-CN",
           "geosite-cn",
           "geosite-icloud@cn",
           "geosite-apple@cn"
