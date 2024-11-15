@@ -21,6 +21,17 @@ systemctl start singbox
 ```
 systemctl restart singbox
 ```
+### 运行这个命令看下报错日志，根据日志解决问题：
+```
+/usr/local/bin/singbox run -D /root/singbox/
+```
+### Tproxy怎么开启
+redirect性能和Tproxy差不多，不需要udp的话可以redirect用，想开启的话就。
+
+先redirect安装，再选择6：重新配置Tproxy
+
+开Tproxy先关闭Tun的自动路由，重新上传配置后再开Tproxy
+
 # 重要！先决条件：需要事先为DNS服务器做好IP分流。
 
 有关更多详细信息，请参阅[此仓库](https://github.com/allanchen2019/ospf-over-wireguard)。
