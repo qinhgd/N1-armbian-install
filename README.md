@@ -9,7 +9,7 @@ bash -c "$(curl -kfsSl https://raw.githubusercontent.com/qinhgd/mosdns-debian-in
 ```
 或者
 ```
-bash -c "$(curl -kfsSl https://raw.githubusercontent.com/qinhgd/N1-armbian-install/refs/heads/v5/6666.sh)"
+bash -c "$(curl -kfsSl https://raw.githubusercontent.com/qinhgd/N1-armbian-install/refs/heads/v5/6666666.sh)"
 ```
 
 ### 常用命令：
