@@ -80,6 +80,7 @@ cd ~
 ```
 
 安装tailscale 
+```
 curl -fsSL https://tailscale.com/install.sh | sh
 
 tailscale up
@@ -96,48 +97,72 @@ tailscale up --advertise-exit-node --advertise-routes=192.168.1.0/24,192.168.31.
 
 
 安装AdGuardHome
+```
 curl -sSL https://raw.githubusercontent.com/AdguardTeam/AdGuardHome/master/scripts/install.sh | sh
+```
 设置开机启动
+```
 iptables -t nat -A PREROUTING -p tcp --dport 53 -j REDIRECT --to-ports 5353
 iptables -t nat -A PREROUTING -p udp --dport 53 -j REDIRECT --to-ports 5353
 ip6tables -t nat -A PREROUTING -p tcp --dport 53 -j REDIRECT --to-ports 5353
 ip6tables -t nat -A PREROUTING -p udp --dport 53 -j REDIRECT --to-ports 5353
+```
 安装nftables
+
 sudo apt update
 sudo apt install nftables
 
 
 停用systemd-resolved……"
+
 systemctl stop systemd-resolved.service
 systemctl disable systemd-resolved.service
 systemctl daemon-reload
 systemctl stop systemd-resolved.service
 systemctl start systemd-resolved.service
-安装nftables
-sudo apt update
-sudo apt install nftables
-安装shellcrash
-export url='https://fastly.jsdelivr.net/gh/juewuy/ShellCrash@master' && wget -q --no-check-certificate -O /tmp/install.sh $url/install.sh  && bash /tmp/install.sh && source /etc/profile &> /dev/null
-安装1panel
-curl -sSL https://resource.fit2cloud.com/1panel/package/quick_start.sh -o quick_start.sh && bash quick_start.sh
-卸载
-1pctl uninstall
 
+安装shellcrash
+
+export url='https://fastly.jsdelivr.net/gh/juewuy/ShellCrash@master' && wget -q --no-check-certificate -O /tmp/install.sh $url/install.sh  && bash /tmp/install.sh && source /etc/profile &> /dev/null
+
+安装1panel
+```
+curl -sSL https://resource.fit2cloud.com/1panel/package/quick_start.sh -o quick_start.sh && bash quick_start.sh
+```
+卸载
+```
+1pctl uninstall
+```
 安装luvky
+```
 curl -o /tmp/install.sh   https://6.66666.host:66/files/golucky.sh  && sh /tmp/install.sh https://6.66666.host:66/files 2.13.4
+```
 安装alist
 默认安装在 /opt/alist 中。 自定义安装路径，将安装路径作为第二个参数添加，必须是绝对路径（如果路径以 alist 结尾，则直接安装到给定路径，否则会安装在给定路径 alist 目录下），如 安装到 /root：
-
+```
 # Install
 curl -fsSL "https://alist.nn.ci/v3.sh" | bash -s install /root
 # update
 curl -fsSL "https://alist.nn.ci/v3.sh" | bash -s update /root
 # Uninstall
 curl -fsSL "https://alist.nn.ci/v3.sh" | bash -s uninstall /root
-启动: systemctl start alist
-关闭: systemctl stop alist
-状态: systemctl status alist
-重启: systemctl restart alist
+```
+启动: 
+```
+systemctl start alist
+```
+关闭: 
+```
+systemctl stop alist
+```
+状态:
+```
+systemctl status alist
+```
+重启: 
+```
+systemctl restart alist
+```
 #获取密码
 需要进入脚本安装AList的目录文件夹內执行如下命令
 
@@ -158,24 +183,31 @@ bash <(curl -Ls https://raw.githubusercontent.com/allanchen2019/mosdns-debian-in
 
 安装openwrt
 1、创建 macvlan 网络
+```
 docker network create -d macvlan --subnet=192.168.31.0/24 --gateway=192.168.31.1 -o parent=eth0 macnet
+```
 2、拉取镜像并创建容器
+```
 docker run -d --name=openwrt --network=macnet --privileged=true --restart=always --ulimit nofile=16384:65536 -v /lib/modules/$(uname -r):/lib/modules/$(uname -r) summary/openwrt-aarch64:latest
+```
 3、更改固件默认 IP 地址
+```
 docker exec openwrt sed -e 's/192.168.1.1/192.168.31.2/' -i /etc/config/network
+```
 容器创建成功后稍等几分钟执行命令，将 IP 更改为与主路由同一网段的 IP 地址，更改完成后重启容器生效
+```
 docker restart openwrt
-
+```
+```
 vi /etc/config/network
-
+```
 以下是在 Armbian 中将这段代码设置为开机自启的方法：
 创建一个脚本文件，例如 /etc/init.d/redirect_dns.sh：
-bash
-Copy
+```
 sudo nano /etc/init.d/redirect_dns.sh
+```
 在文件中添加以下内容：
-bash
-Copy
+```
 #!/bin/sh
 ### BEGIN INIT INFO
 # Provides:          redirect_dns
@@ -190,12 +222,13 @@ iptables -t nat -A PREROUTING -p tcp --dport 53 -j REDIRECT --to-ports 53
 iptables -t nat -A PREROUTING -p udp --dport 53 -j REDIRECT --to-ports 53
 ip6tables -t nat -A PREROUTING -p tcp --dport 53 -j REDIRECT --to-ports 53
 ip6tables -t nat -A PREROUTING -p udp --dport 53 -j REDIRECT --to-ports 53
+```
 给脚本添加可执行权限：
-bash
-Copy
+```
 sudo chmod +x /etc/init.d/redirect_dns.sh
+```
 更新系统启动项：
-bash
-Copy
+```
 sudo update-rc.d redirect_dns.sh defaults
+```
 这样，在系统启动时就会自动执行这些 iptables 规则来重定向端口 53 的流
